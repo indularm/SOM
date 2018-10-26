@@ -1,8 +1,26 @@
-## Welcome to GitHub Pages
+Self-organizing map is a clustering technique which can be used to view topological nature of the dataset in a graphical view by reducing the higher dimensions to lower dimensions. It’s more advantageous than K-means algorithm in the sense that SOM can preserve the topology of the original dataset. It can be used to get an idea of how many clusters the dataset can be sub divided into. Then the K-means algorithm can be run on trained SOM to show discrete clustering.
 
-You can use the [editor on GitHub](https://github.com/indularm/SOM/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+There are several graphical outputs that can be created to understand the nature of the dataset. The U-Matrix shows the distances between the neighbouring map units. It reveals the dissimilarities that separate the dataset into clusters. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+
+A component plane shows the values in each map unit for one variable. This allows us to know which features has affected the most for the classification and this can be used to get a final picture of the best classification.
+
+Here we can see that the feature ‘Number of buyers standard deviation of holidays’ has affected the most for a clear classification. 
+ 
+
+The hit map can be used to see how the data points are distributed on the map.
+
+
+
+The dark coloured neurons are the best matching units for the datasets. 
+
+Then hence there are 5 cut qualities in the data set we applied the K- means algorithm on the trained SOM and following classification could be seen, which can be concluded that it’s in close resemblance with the component plane with the ‘table’ feature.
+
+(Here we have used the SOMPY library created by Vahid Moosavi.)
+
+
+
 
 ### Markdown
 
