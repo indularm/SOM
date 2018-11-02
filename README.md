@@ -2,9 +2,9 @@ Self organising maps or kohonen networks provide a way of representing multi-dim
 
 A SOM is made of neurons located on a regular, usually 1 to 2 dimentional grid. (Higher dimentional grids are possible, but they are not generally used since their visualization is much more difficult). The neurons are connected to adjacent neurons by a neighbourhood relation dictating the structure of the map. In 2 dimentional case the structure can be rectangualr or hexagonal. The sides of the map can also be connected, in that case the shape becomes a cylinder or a toroid. 
 
+<img src="grids.gif" alt="blobs" class="inline"/>
 
-
-
+<img src="shapes.gif" alt="blobs" class="inline"/>
 
 
 
