@@ -1,4 +1,15 @@
-Self-organizing map is a clustering technique which can be used to view topological nature of the dataset in a graphical view by reducing the higher dimensions to lower dimensions. It’s more advantageous than K-means algorithm in the sense that SOM can preserve the topology of the original dataset. It can be used to get an idea of how many clusters the dataset can be sub divided into. Then the K-means algorithm can be run on trained SOM to show discrete clustering.
+Self-organizing map(SOM) is a clustering technique which can be used to view topological nature of the dataset in a graphical view by reducing the higher dimensions to lower dimensions. It’s more advantageous than K-means algorithm in the sense that SOM can preserve the topology of the original dataset. It can be used to get an idea of how many clusters the dataset can be sub divided into.
+
+A SOM is made of neurons located on a regular, usually 1 to 2 dimentional grid. (Higher dimentional grids are possible, but they are not generally used since their visualization is much more difficult). The neurons are connected to adjacent neurons by a neighbourhood relation dictating the structure of the map. In 2 dimentional case the structure can be rectangualr or hexagonal. The sides of the map can also be connected, in that case the shape becomes a cylinder or toroid. 
+
+
+
+
+
+
+
+
+
 
 There are several graphical outputs that can be created to understand the nature of the dataset. The U-Matrix shows the distances between the neighbouring map units. It reveals the dissimilarities that separate the dataset into clusters. 
 
