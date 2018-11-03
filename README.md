@@ -6,7 +6,7 @@ A SOM is made of neurons located on a regular, usually 1 to 2 dimentional grid. 
 
 <img src="shapes.gif" alt="blobs" class="inline"/>
 
-
+Let's understand how the algorithm works, 
 
 
 
