@@ -30,18 +30,44 @@ After n training cycles the values of the codebook vectors W<sup>n</sup> will re
 
 To have a idea of the data set being analyzed we need to visualize the codebook vectors. There are several ways we can do that, and each way of visualizing gives different view of the dataset. 
 
-**Visualization of the COdebook Vectors**
+**Visualization of the Codebook Vectors**
 
 The codebook vectors tend to be closer to each other in the areas where they represent input vecotrs which are distributed tensly and vice versa the distance between the codebook vectors are large in areas where there is a sparse distribution of input vectors. 
+
+Let's generate some data first and reperesent them in following visaualizations as the expalnation goes, 
+Here we'll be using the library created by Vahid Moosavi for SOM. 
+
+We'll use dataset with 10 dimentions with 5 cluster centers which we can't visualize in normal ways of cartesian graphs.  
+```python
+from sklearn.datasets import make_blobs
+import matplotlib.pyplot as plt
+
+X, y = make_blobs(n_samples=500,
+                  n_features=10,
+                  centers=5,
+                  cluster_std=1,
+                  center_box=(-10.0, 10.0),
+                  shuffle=True,
+                  random_state=1)
+
+print(X) #outputs a dataset with 2 features and 500 samples
+print(y) #outputs cluster labes for 500 samples
+
+plt.scatter(X[:,0],X[:,1],marker = "x", s= 12)
+plt.show()
+```      
 
 **Component Planes :** 
   This shows the relative values of the components of the codebook vectors. Therefore the number of component palnes per SOM is eqaul to the number of input vector's dimentionality. Component planes can be thought of as a sliced version of the SOM. Each component plane has the relative distribution of one data vector component. 
   In this representation, dark values represent relatively small values while white values represent relatively large values. By compairing component planes we can have an idea of the correlation between the input vector components. If the outlook pattern and colors are similar, the components strongly correlate. 
   
+ <img src="Figure_1.png" alt="blobs" class="inline"/>
+  
 **U - Matrix :**
   This figure shows the relative distances between the neurons in the map. Here the distance between the adjacent neurons is calculated and presented with different colorings between the adjacent nodes. 
   The light colouring between the neurons corresponds to a large distance and thus gap between the codebook values in the input space and the dark colors indicates that the codebook vecotrs are closer to each other. Therefore dark areas can be though of as clusters and light coloured areas as cluster seperators. This representation is helpful when one tries to find the clusters in the input data without having any priori information about the clusters. 
 
+<img src="Figure_2.png" alt="blobs" class="inline"/>
 
 (Here we have used the SOMPY library created by Vahid Moosavi.)
 
