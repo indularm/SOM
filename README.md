@@ -12,9 +12,10 @@ Each unit is associated with weight vector (or codebook vector) W<sub>i</sub>  w
 
 <img src="Figure_10.png" alt="blobs" class="inline"/>
 
-The codebook vectors W<sub>i</sub> must be initiated with values similar to those of the input data. During the training of the map the input vectors are presented to the map consecutively. The unit with a codebook vector W<sub>i</sub> that sohows the smallest distance to the input vector x is declared as the best matching unit(BMU). You can view the best matching units with the hits map. This process is known as so called vector quantization.
+The codebook vectors W<sub>i</sub> must be initiated with values similar to those of the input data. During the training of the map the input vectors are presented to the map consecutively. The unit with a codebook vector W<sub>i</sub> that sohows the smallest distance to the input vector X is declared as the best matching unit(BMU). You can view the best matching units with the hits map. This process is known as so called vector quantization.
 The codebook vectors are unpdated via following equation, 
 
+**W<sub>i</sub><sup>t+1</sup> = W<sub>i</sub><sup>t</sup> + h<sub>i</sub><sup>t</sup>x\alpha x d(X,W<sub>i</sub><sup>t</sup>**
 
 (Here we have used the SOMPY library created by Vahid Moosavi.)
 
