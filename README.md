@@ -65,7 +65,7 @@ plt.show()
   
 **U - Matrix :**
   This figure shows the relative distances between the neurons in the map. Here the distance between the adjacent neurons is calculated and presented with different colorings between the adjacent nodes. 
-  The light colouring between the neurons corresponds to a large distance and thus gap between the codebook values in the input space and the dark colors indicates that the codebook vecotrs are closer to each other. Therefore dark areas can be though of as clusters and light coloured areas as cluster seperators. This representation is helpful when one tries to find the clusters in the input data without having any priori information about the clusters. 
+  The light colouring between the neurons corresponds to a large distance between the codebook vectors and hence in the input space too, and the dark colors indicates that the codebook vecotrs are closer to each other. Therefore dark areas can be though of as clusters and light coloured areas as cluster seperators. This representation is helpful when one tries to find the clusters in the input data without having any priori information about the clusters. 
 
 <img src="Figure_2.png" alt="blobs" class="inline"/>
 
