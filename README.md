@@ -34,11 +34,11 @@ To have a idea of the data set being analyzed we need to visualize the codebook 
 
 The codebook vectors tend to be closer to each other in the areas where they represent input vecotrs which are distributed tensly and vice versa the distance between the codebook vectors are large in areas where there is a sparse distribution of input vectors. 
 
-**Component Planes** 
+**Component Planes :** 
   This shows the relative values of the components of the codebook vectors. Therefore the number of component palnes per SOM is eqaul to the number of input vector's dimentionality. Component planes can be thought of as a sliced version of the SOM. Each component plane has the relative distribution of one data vector component. 
   In this representation, dark values represent relatively small values while white values represent relatively large values. By compairing component planes we can have an idea of the correlation between the input vector components. If the outlook pattern and colors are similar, the components strongly correlate. 
   
-**U - Matrix**
+**U - Matrix :**
   This figure shows the relative distances between the neurons in the map. Here the distance between the adjacent neurons is calculated and presented with different colorings between the adjacent nodes. 
   The light colouring between the neurons corresponds to a large distance and thus gap between the codebook values in the input space and the dark colors indicates that the codebook vecotrs are closer to each other. Therefore dark areas can be though of as clusters and light coloured areas as cluster seperators. This representation is helpful when one tries to find the clusters in the input data without having any priori information about the clusters. 
 
