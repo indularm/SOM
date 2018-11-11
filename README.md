@@ -6,27 +6,15 @@ A SOM is made of neurons located on a regular, usually 1 to 2 dimentional grid. 
 
 <img src="shapes.gif" alt="blobs" class="inline"/>
 
-Let's understand how the algorithm works, 
+Let's understand how the map works, 
 
+Each unit is associated with weight vector (or codebook vector) W<sub>i</sub>  which is of the same dimention as the input data. 
 
+<img src="Figure_10.png" alt="blobs" class="inline"/>
 
+The codebook vectors W<sub>i</sub> must be initiated with values similar to those of the input data. During the training of the map the input vectors are presented to the map consecutively. The unit with a codebook vector W<sub>i</sub> that sohows the smallest distance to the input vector x is declared as the best matching unit(BMU). You can view the best matching units with the hits map. This process is known as so called vector quantization.
+The codebook vectors are unpdated via following equation, 
 
-There are several graphical outputs that can be created to understand the nature of the dataset. The U-Matrix shows the distances between the neighbouring map units. It reveals the dissimilarities that separate the dataset into clusters. 
-
-
-
-A component plane shows the values in each map unit for one variable. This allows us to know which features has affected the most for the classification and this can be used to get a final picture of the best classification.
-
-Here we can see that the feature ‘Number of buyers standard deviation of holidays’ has affected the most for a clear classification. 
- 
-
-The hit map can be used to see how the data points are distributed on the map.
-
-
-
-The dark coloured neurons are the best matching units for the datasets. 
-
-Then hence there are 5 cut qualities in the data set we applied the K- means algorithm on the trained SOM and following classification could be seen, which can be concluded that it’s in close resemblance with the component plane with the ‘table’ feature.
 
 (Here we have used the SOMPY library created by Vahid Moosavi.)
 
