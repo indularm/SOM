@@ -105,7 +105,7 @@ UMAT = u.show(som, distance2=1, row_normalized=False, show_data=True, contooor=T
 ```
 The hits map shows the units that has chosen as BMUs, 
 
-<img src="Figure_2.png" alt="blobs" class="inline"/>
+<img src="Figure_3.png" alt="blobs" class="inline"/>
 
 Codes for the above visualization, 
 
