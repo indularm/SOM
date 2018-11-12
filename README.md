@@ -103,6 +103,18 @@ UMAT  = u.build_u_matrix(som, distance=1, row_normalized=False)
 #Here you have Umatrix plus its render
 UMAT = u.show(som, distance2=1, row_normalized=False, show_data=True, contooor=True, blob=False)
 ```
+The hits map shows the units that has chosen as BMUs, 
+
+<img src="Figure_2.png" alt="blobs" class="inline"/>
+
+Codes for the above visualization, 
+
+```python
+from sompy.visualization.bmuhits import BmuHitsView
+
+vhts  = BmuHitsView(100,100,"Hits Map",text_size=1)
+vhts.show(som, anotate=True, onlyzeros=False, labelsize=4, cmap="Greys", logaritmic=False)
+```
 
 (Here we have used the SOMPY library created by Vahid Moosavi.)
 
